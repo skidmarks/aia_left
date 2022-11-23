@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIA생명(무)뉴이좋은치아보험(갱신형)</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="evt_wrap">
+        <div class="evt_hdr">
+            <div class="inner">
+                <span><img src="../images/logo_agent.jpg" alt="AIA생명(무)뉴이좋은치아보험(갱신형)"></span>
+                <span><img src="../images/perm_num.jpg" alt="생명보험협회 심의필 제2021-05224호(2021.10.26~2022.10.25)"></span>
+            </div>
+        </div><!--/evt_hdr-->
+        <div class="evt_cnt">
+            <div class="inner">
+                <h1><img src="../images/tit_txt.png" alt="나이 들수록 걱정되는 치과치료비, AIA에서 도와드립니다!"></h1>
+
+                <div class="tab_area">
+                    <ul>
+                        <li class="on" data-tab="#tab_cnt_01">충전치료</li>
+                        <li data-tab="#tab_cnt_02">보철치료</li>
+                    </ul>
+                    <div class="tab_cnt_wrap">
+                        <div class="tab_cnt" id="tab_cnt_01">
+                            <img src="../images/tab_01_cnt.jpg" alt="재료 상관없이, 개수 제한 NO! - 금/세라믹, 레진 등, 아말감 : 가입 91일째부터 보장, 충전/크라운 치료급여금은 1년 이내 50%보장">
+                        </div>
+                        <div class="tab_cnt" id="tab_cnt_02">
+                            <img src="../images/tab_02_cnt.jpg" alt="큰 돈 드는 보철치료 든든하게!(특약가입시) 임플란트 100만원, 브릿지 50만원 틀니 50만원">
+                        </div>
+                    </div>
+
+                    <div class="model">
+                        <img src="../images/model.png" alt="">
+                    </div>                    
+                </div>
+
+                <script>
+                    // tab 열고 닫기
+                    document.addEventListener('DOMContentLoaded', function() {
+
+                        if (window.NodeList && !NodeList.prototype.forEach) {
+                            NodeList.prototype.forEach = Array.prototype.forEach;
+                        }
+
+                        if (document.querySelectorAll('.tab_area ul li').length < 0) return false;
+                        if (document.querySelectorAll('.tab_cnt').length < 0) return false;
+
+                        var tabs = document.querySelectorAll('.tab_area ul li');
+                        var tabContents = document.querySelectorAll('.tab_cnt');
+
+                        function targetRemoveClassName(objs, className) {
+                            objs.forEach(function(curTarget, curTargetIndex, targetList) {
+                                curTarget.classList.remove(className);
+                            });
+                        }
+
+                        function targetHide(objs) {
+                            objs.forEach(function(curTarget, curTargetIndex, targetList) {
+                                curTarget.style.display = "none";
+                            });
+                        }
+
+                        tabs.forEach(function(currentTab, currentIndex, listObj) {
+                            currentTab.addEventListener('click', function() {
+                                targetRemoveClassName(tabs, 'on');
+                                this.classList.add('on');
+                                let currentTabCnt = document.querySelector(this.getAttribute('data-tab'));
+                                targetHide(tabContents);
+                                currentTabCnt.style.display = "block";
+                            });
+                        });
+                    });
+                </script>
+
+                <div class="form_wrap">
+                    <div class="form_box">
+                        <h2><img src="../images/form_tit.jpg" alt="예상보험료 무료조회신청"></h2>
+                        <table class="tbl_fbx">
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" name="" id="" value="" placeholder="이름" class="ipt_name" /></td>
+                                    <td>
+                                        <span class="gender_chk">
+                                            <input type="radio" name="sex" value="1" id="male" checked="checked" /><label for="male">남</label>
+                                            <input type="radio" name="sex" value="2" id="female" /><label for="female">여</label>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="text" name="" id="" value="" placeholder="생년월일 (예 : 810611)" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="padding-bottom:7px;">
+                                        <input type="text" name="" id="" value="" placeholder="휴대폰번호 (-없이 입력)" />
+                                    </td> 
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="padding-bottom:4px;">
+                                        <ul class="agr_line">
+                                            <li><input type="checkbox" name="" value="" id="agr_chk_01" /><label for="agr_chk_01"><a href="#privacy_term_01">아래</a>의 개인정보 수집 및 이용에 관한 내용에 동의함</label></li>
+                                            <li><input type="checkbox" name="" value="" id="agr_chk_02" /><label for="agr_chk_02"><a href="#privacy_term_02">아래</a>의 개인정보 위탁에 관한 내용에 동의함</label></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="padding:0;">
+                                        <a href="#"><img src="../images/btn_insu_search.gif" alt="보험료 조회"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="btn_txt">보험료 조회 시 전화 상담을 통해 보험료 및 상품안내를 드릴 예정입니다.</p>
+                    <div class="coupon"><img src="../images/btn_coupon.png" alt="가입하시고 신세계상품권 1만원 교환권 받으세요!"></div>
+                </div><!--form_wrap-->
+            </div><!--inner-->
+        </div><!--evt_cnt-->
+
+        <div class="prv_use_wrap">
+            <div class="prv_use_info">
+                <div class="tbl_prv_box" id="privacy_term_01">
+                    <h3>개인정보 수집 및 이용</h3>
+                    <div class="tbl_prv_outer">
+                        <table class="tbl_prv_01">
+                            <thead>
+                                <tr>
+                                    <th>개인정보 수집자</th>
+                                    <th class="tar_line">개인정보 보유기간</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>AIA생명</td>
+                                    <td class="tar_line">
+                                        수집일로부터 1년간<br>
+                                        (고객 요청 시 지체없이 파기)
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <thead>
+                                <tr>
+                                    <th>개인정보의 수집·이용 목적</th>
+                                    <th class="tar_line">수집하는 항목(필수)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>본인식별확인</td>
+                                    <td class="tar_line">성명, 성별, 생년월일</td>
+                                </tr>
+                                <tr>
+                                    <td>보험상품 안내(전화, 문자) 및 고객민원 상담업무</td>
+                                    <td class="tar_line">성명, 성별, 생년월일, 휴대폰번호, 참여일시, 참여매체, 보험상품명, 경품명, IP Address</td>
+                                </tr>
+                                <tr>
+                                    <td>경품발송업무</td>
+                                    <td class="tar_line">휴대폰번호, 경품명</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tbl_prv_box" id="privacy_term_02">
+                    <h3>개인정보 취급 위탁을 받는 자</h3>
+                    <div class="tbl_prv_outer">
+                        <table class="tbl_prv_02">
+                            <tbody>
+                                <tr>
+                                    <th>㈜열심히커뮤니케이션즈</th>
+                                    <td class="tar_line">고객정보 및 저장 서버 관리, 경품 발송 대행, 고객 상담 업무, 고객 상담 접수 및 접수정보 전달</td>
+                                </tr>
+                                <tr>
+                                    <th>㈜한경닷컴</th>
+                                    <td class="tar_line">경품 발송 대행</td>
+                                </tr>
+                                <tr>
+                                    <th>㈜앰엔와이즈</th>
+                                    <td class="tar_line">메시지 발송 업무 대행</td>
+                                </tr>
+                                <tr>
+                                    <th>NICE평가정보㈜</th>
+                                    <td class="tar_line">본인 식별 확인</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div><!--/prv_use_info-->  
+        </div>               
+        <div class="evt_form_notice">
+            <img src="../images/note.jpg" alt="">
+            <p>
+                · 본 페이지를 통한 전화 상담을 통해 본 페이지 상의 보험 상품에 가입하는 경우, 자동으로 이벤트에 응모되어 조건 충족 시 경품이 제공됩니다.
+                · 상품 안내 및 이벤트 참여 동의 철회 : 080-519-1234 (무료)   
+                · 상기 동의를 거부할 권리가 있으나, 수집 및 이용과 위탁에 동의하지 않을 경우 상품 안내 및 이벤트 참여가 불가능합니다.
+                · 정확한 정보를 입력하지 않으실 경우 개인정보 수집 및 이용, 위탁에 동의하셔도 상담 신청 및 이벤트참여가 불가능합니다.  
+                · 타인의 개인정보 도용 시 형사상 처벌을 받을 수 있습니다.
+            </p>
+        </div>          
+    </div><!--/.evt_wrap-->
+</body>
+</html>
